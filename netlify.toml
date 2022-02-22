@@ -5,8 +5,9 @@
     functions = "/netlify"
 
 [[plugins]]
-    package = "netlify-plugin-inline-functions-env"
+    package = "@netlify/plugin-nextjs"
 
 [[plugins]]
-    [plugins.input]
+    package = "netlify-plugin-inline-functions-env"
+    [plugins.inputs]
         buildEvent = "onBuild"
