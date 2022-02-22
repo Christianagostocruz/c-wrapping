@@ -1,0 +1,10 @@
+[build]
+    base = "/"
+    publish = "/out"
+    command = "npm run build"
+    functions = "/netlify"
+
+[[plugins]]
+    package = "netlify-plugin-inline-functions-env"
+    [plugins.input]
+        buildEvent = "onBuild"
