@@ -1,7 +1,7 @@
 [build]
     base = "carwrapping"
-    publish = "/dist"
-    command = "sanity build"
+    publish = "carwrapping/.next"
+    command = "npm run build"
 
 [[redirects]]
     from = "/*"
