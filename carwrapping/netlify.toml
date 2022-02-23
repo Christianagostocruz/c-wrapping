@@ -1,5 +1,5 @@
 [build]
-    base = "carwrapping"
+    base = "/carwrapping"
     publish = "/dist"
     command = "npm run build"
 
