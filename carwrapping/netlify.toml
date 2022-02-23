@@ -1,6 +1,6 @@
 [build]
-    base = "/carwrapping"
-    publish = "/dist"
+    base = "carwrapping"
+    publish = "carwrapping/.next"
     command = "npm run build"
 
 [[redirects]]
