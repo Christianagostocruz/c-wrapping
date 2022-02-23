@@ -6,10 +6,10 @@ import whatapp from '../assets/whatapp.jpg'
 import { FC } from 'react'
 
 interface HeaderProps {
-  showIgButton?: boolean
+
 }
 
-const Header: FC<HeaderProps> = ({ showIgButton }) => {
+const Header: FC<HeaderProps> = () => {
   return (
     <header className="mx-auto flex max-w-7xl justify-between border-b p-5">
       <div className="flex items-center justify-start space-x-5">
@@ -37,19 +37,18 @@ const Header: FC<HeaderProps> = ({ showIgButton }) => {
             />
           </a>
         </Link>
-        {showIgButton && (
-          <Link href="https://www.instagram.com/christianagostocruz/">
-            <a target="_blank">
-              <Image
-                src={Instagram}
-                width="50"
-                height="50"
-                className="cursor-pointer object-contain"
-                alt="Instagram"
-              />
-            </a>
-          </Link>
-        )}
+
+        <Link href="https://www.instagram.com/cwrapping_pr/">
+          <a target="_blank">
+            <Image
+              src={Instagram}
+              width="50"
+              height="50"
+              className="cursor-pointer object-contain"
+              alt="Instagram"
+            />
+          </a>
+        </Link>
       </div>
     </header>
   )

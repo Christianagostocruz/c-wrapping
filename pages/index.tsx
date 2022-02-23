@@ -9,12 +9,10 @@ import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 
 interface HomeServerSideProps {
   posts: Post[]
-  showIgButton: boolean
 }
 
 export default function Home({
   posts,
-  showIgButton,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
@@ -22,7 +20,7 @@ export default function Home({
         <title>Car Wrapping</title>
       </Head>
 
-      <Header showIgButton={showIgButton} />
+      <Header />
       <div className="relative mb-10 h-[300px] shadow-2xl sm:h-[400px] lg:h-[600px] xl:h-[700px] 2xl:h-[900px]">
         <Image
           src={hero}
@@ -81,7 +79,6 @@ export const getServerSideProps: GetServerSideProps<
   return {
     props: {
       posts,
-      showIgButton: /true/i.test(process.env.SHOW_IG ?? ''),
     },
   }
 }
