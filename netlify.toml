@@ -3,11 +3,3 @@
     publish = "/.next"
     command = "npm run build"
     functions = "/netlify"
-
-[[plugins]]
-    package = "@netlify/plugin-nextjs"
-
-[[plugins]]
-    package = "netlify-plugin-inline-functions-env"
-    [plugins.inputs]
-        buildEvent = "onBuild"
