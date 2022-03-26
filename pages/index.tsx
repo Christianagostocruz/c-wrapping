@@ -6,7 +6,8 @@ import Link from 'next/link'
 import { sanityClient, urlFor } from '../sanity'
 import { Post } from '../interfaces/sanity'
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
-
+import Footer from "../components/Footer";
+import logo3 from "../assets/logo3.png";
 interface HomeServerSideProps {
   posts: Post[]
 }
@@ -34,6 +35,9 @@ export default function Home({
           </p>
         </div>
       </div>
+      <div className="flex justify-center">
+        <Image src={logo3} alt="Cwrapping logo" height={150} width={150} />
+      </div>
       <div className="grab-3 grid grid-cols-1 border-b p-2 sm:grid-cols-2 md:gap-6 md:p-6 lg:grid-cols-3">
         {posts.map((post) => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
@@ -56,6 +60,7 @@ export default function Home({
           </Link>
         ))}
       </div>
+      <Footer/>
     </>
   )
 }
