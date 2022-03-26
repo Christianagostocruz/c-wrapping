@@ -1,6 +1,6 @@
 [build]
     base = "/carwrapping"
-    publish = "/dist"
+    publish = "/dist/static"
     command = "sanity build"
 
 [[redirects]]
