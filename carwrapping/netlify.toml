@@ -1,9 +1,7 @@
 [build]
     base = "/carwrapping"
-    publish = "../.next"
+    publish = "/carwrapping"
     command = "npm run build"
-    functions = "/carwrapping/netlify"
-
 
 [[redirects]]
     from = "/*"
