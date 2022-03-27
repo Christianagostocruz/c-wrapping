@@ -3,14 +3,6 @@
     publish = "../.next"
     command = "npm run build"
 
-[[plugins]]
-package = "netlify-plugin-inline-functions-env"
-
-[[plugins]]
-package = "netlify-plugin-inline-functions-env"
-[plugins.inputs]
-buildEvent = "onBuild"
-
 [[redirects]]
     from = "/*"
     to = "/" 
