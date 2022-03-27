@@ -1,9 +1,5 @@
 [build]
-    base = "../carwrapping"
+    base = "/carwrapping"
     publish = "../.next"
     command = "npm run build"
 
-[[redirects]]
-    from = "/*"
-    status = 200
-    to = "/"
